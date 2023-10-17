@@ -21,12 +21,14 @@ public class Group {
         group.add(st4);
         group2.add(st1);
         group2.add(st2);
+        group2.add(st3);
+        group2.add(st4);
         group.indexOf(st1);
         String[] sa = lists.toArray(new String[1]);
-        System.out.println(group.indexOf(st2));
-        for (String s:sa){
-            System.out.println(s);
-        }
+//        System.out.println(group.indexOf(st2));
+//        for (String s:sa){
+//            System.out.println(s);
+//        }
 //        Student st5 = new Student("Sima", 20, 3, 'm');
 //        group.remove(st5);
 //        group.remove(st3);
@@ -37,5 +39,8 @@ public class Group {
 //        List<Integer> rr = new ArrayList<>(List.of(rrr));
 //        rr.add(2);
 //        rr.forEach(System.out::println);
+//        group2.remove(st3);
+        Student[] st = group2.toArray(new Student[0]);
+        System.out.println(Arrays.toString(st));
     }
 }
