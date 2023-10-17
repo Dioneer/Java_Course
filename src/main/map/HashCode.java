@@ -1,5 +1,6 @@
 package main.map;
 
+import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Objects;
@@ -19,7 +20,7 @@ public class HashCode {
         System.out.println(st1);
     }
 }
-final class Student{
+final class Student implements Comparable<Student>{
     final String name;
     final String surname;
     final String course;
@@ -50,5 +51,17 @@ final class Student{
     @Override
     public int hashCode() {
         return Objects.hash(name, surname, course);
+    }
+
+    @Override
+    public int compareTo(Student o) {
+        int res = this.name.compareTo(o.name);
+        if(res==0){
+            res = this.surname.compareTo(o.surname);
+            if(res==0){
+                res = this.course.compareTo(o.course);
+            }
+        }
+        return res;
     }
 }
