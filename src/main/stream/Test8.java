@@ -31,7 +31,11 @@ public class Test8 {
 //        System.out.println(min);
 //        Students max = students.stream().max((x,y)->x.getAge()-y.getAge()).get();
 //        System.out.println(max);
-        students.stream().filter(i->i.getAge()>20).limit(2).forEach(System.out::println);
-        students.stream().filter(i->i.getAge()>20).skip(2).forEach(System.out::println);
+//        students.stream().filter(i->i.getAge()>20).limit(2).forEach(System.out::println);
+//        students.stream().filter(i->i.getAge()>20).skip(2).forEach(System.out::println);
+//        List<Integer> course = students.stream()
+//                .mapToInt(Students::getCourse)
+//                .boxed()
+//                .toList();
     }
 }
