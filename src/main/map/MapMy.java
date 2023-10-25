@@ -14,15 +14,15 @@ public class MapMy {
         map1.put(456778,"Mike Popkin");
         map1.put(null, null);
         map1.remove(null);
-        map1.keySet();
+        System.out.println(map1.keySet());
         System.out.println(map1.values());
         System.out.println(map1.entrySet());
-        System.out.println(map1.containsValue("Mike Popkin"));
-        map1.putIfAbsent(456123,"Rik mjd");
-        System.out.println(map1.get(89765));
-        System.out.println(map1);
-        for(Map.Entry<Integer, String> item: map1.entrySet()){
-            System.out.println(item);
-        }
+//        System.out.println(map1.containsValue("Mike Popkin"));
+//        map1.putIfAbsent(456123,"Rik mjd");
+//        System.out.println(map1.get(89765));
+//        System.out.println(map1);
+//        for(Map.Entry<Integer, String> item: map1.entrySet()){
+//            System.out.println(item);
+//        }
     }
 }

@@ -52,11 +52,13 @@ public class StreamMy {
 //        students = students.stream().sorted().collect(Collectors.toList());
 //        System.out.println(students);
 
-        students.stream().map(i-> {
+        Students first = students.stream().map(i-> {
                     i.setName(i.getName().toUpperCase()); return i;
                 })
                 .filter(i->i.getSex() == 'f')
                 .sorted(Comparator.comparingInt(x -> x.age))
-                .forEach(System.out::println);
+//                .forEach(System.out::println);
+                .findFirst().get();
+        System.out.println(first);
     }
 }

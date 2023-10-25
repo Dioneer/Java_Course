@@ -39,6 +39,10 @@ public class Students implements Comparable<Students>{
                 '}';
     }
 
+    public int getCourse() {
+        return course;
+    }
+
     @Override
     public int compareTo(Students o) {
         return this.name.compareTo(o.getName());
