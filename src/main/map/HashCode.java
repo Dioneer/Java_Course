@@ -16,8 +16,10 @@ public class HashCode {
         st1.put(stt3, 9.5);
         Student stt4 = new Student("Elena3", "Iknk", "3");
         boolean bool = st1.containsKey(stt4);
-        System.out.println(bool);
-        System.out.println(st1);
+//        System.out.println(bool);
+//        System.out.println(st1);
+        System.out.println(stt4.hashCode());
+        System.out.println(stt3.hashCode());
     }
 }
 final class Student implements Comparable<Student>{
@@ -48,10 +50,10 @@ final class Student implements Comparable<Student>{
         return Objects.equals(name, student.name) && Objects.equals(surname, student.surname) && Objects.equals(course, student.course);
     }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(name, surname, course);
-    }
+//    @Override
+//    public int hashCode() {
+//        return Objects.hash(name, surname, course);
+//    }
 
     @Override
     public int compareTo(Student o) {

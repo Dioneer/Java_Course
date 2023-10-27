@@ -15,7 +15,14 @@ public class Program {
         bb.add(9);
         Collections.sort(bb);
         System.out.println(bb);
-        serchB(bb, 36);
+//        serchB(bb, 36);
+        int i = 5;
+        Integer x = 5;
+        String s= "aa";
+        String ss= new String("aa");
+        Integer xs = new Integer(5);
+        System.out.println(x.compareTo(xs));
+
     }
     public static void serchB(List<Integer> bb, int key){
         int min = 0;
@@ -32,6 +39,5 @@ public class Program {
             }
         }
         System.out.println(-1);
-        return;
     }
 }
